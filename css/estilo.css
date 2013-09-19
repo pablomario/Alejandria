@@ -1,0 +1,187 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+html, body {  }
+
+*{
+
+	margin:0;
+	padding:  0;	
+}
+
+ul, li {
+	list-style:  none;
+}
+
+#blanco{
+	height: 15px; 
+	clear: inherit;
+}
+
+h1,h2{
+	font-size:  2.2em;
+	font-family: 'Amatic SC', cursive;
+}
+
+.izquierda{
+	margin: 2px;
+	width:  400px;
+	float: left;
+}
+
+.derecha{
+	margin: 2px;
+	width:  400px;
+	float: right;
+}
+
+/*    FIN RESET Y BASICOS    */
+
+
+body{
+	background:  url("../img/fondo.png");
+	font-family: 'Lato', sans-serif;
+	color:#1f1b16;
+}
+
+#main{	
+	background:  #ffffff;
+	margin: 0 auto;
+	width: 870px;
+	border-bottom:  5px solid #e79915;
+}
+
+	#usuario{
+		margin-top: 10px;
+		padding:  7px;
+		display: inline;
+		float:right;
+	}
+
+	#usuario p span{
+		font-size: 12px;
+		font-style: italic; 
+	}
+
+	#usuario a{
+		text-decoration:  none;
+		color:inherit ;
+	}
+
+	#usuario a:hover{
+		text-decoration:  underline;
+		color: #f70331;
+
+	}
+
+	#imagen-cabecera{
+		height:  225px;
+		width:  870px;
+		margin-top: -50px;
+		background:  url("../img/alejandria-biblioteca.png");
+	}
+
+nav{
+	height:  41px;
+	width:  100%;
+	background:  url("../img/nav.png")!important;	
+	background: #1f1b16;
+}
+
+	#navegacion{
+		margin-left: 5px;
+		padding:  0;
+	}
+
+	#navegacion li{
+		display: inline;
+	}
+
+	#navegacion li a{
+		font-size:16px; 
+		text-decoration: none; 
+		float:left; 
+		padding: 10px;  
+		color: #fff; 
+	}
+
+	#navegacion li a:hover{
+		background-color: #df891c; 
+		color:#1f1b16;
+		margin-top:-2px; 
+		padding-bottom:12px; 
+	}
+
+
+section{	
+	width:  820px;	
+	margin: 0 auto;	
+	padding:  7px;
+	clear: both;
+}
+
+article form{
+	padding: 4px;	
+	
+}
+
+.video{
+	background:  url("../img/video.png");
+	background-position: top right; 
+	background-repeat:  no-repeat;
+}
+
+.registro{
+	text-align:  center;
+}
+
+article form input{
+	height:  20px;
+	padding: 2px;
+	margin:  4px;
+}
+
+article form span{
+	padding-left:  50px;
+	font-size:  12px;
+	font-style:  italic; 
+}
+
+	article li {			
+		display: inline;
+		font-size:16px; 
+		text-decoration: none; 
+		float:left; 		
+		color:#1f1b16; 
+		padding: 6px; 	 
+	}
+
+	article li a{						
+		color:#1f1b16;
+		text-decoration:  none;		
+	}
+
+	article li a:hover{
+		padding: 6px; 
+		background-color: #df891c; 
+		color:#1f1b16;
+		margin-top:-2px; 		
+	}
+
+.enlace-video{
+	font-weight: 900;
+}
+	
+footer{
+	color: #ffffff;
+	height:  28px;
+	background:  url("../img/bg.png");	
+	font-family: 'Amatic SC', cursive;	
+}
+
+footer p{
+	font-size:  18px;
+	padding: 2px;
+	text-align:  center;
+}
+
