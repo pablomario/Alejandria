@@ -39,7 +39,8 @@ h1,h2{
 
 
 body{
-	background:  url("../img/fondo.png");
+	background:  url("../img/fondo.png") top center ;
+	background-size:cover;
 	font-family: 'Lato', sans-serif;
 	color:#1f1b16;
 }
@@ -49,14 +50,46 @@ body{
 	margin: 0 auto;
 	width: 870px;
 	border-bottom:  5px solid #e79915;
+	 -webkit-box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
+box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
+
 }
 
 	#usuario{
 		margin-top: 10px;
-		padding:  7px;
-		display: inline;
+		padding:  7px;		
 		float:right;
 	}
+
+	#usuario form{	
+		margin-top: -20px;		
+		background: url("../img/form-bg.png") top center repeat-x;
+		padding:  7px;
+		-webkit-box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
+		box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
+
+	}
+
+	#usuario form h1{
+			text-align:  center;
+	}
+
+	#usuario form label{	
+		text-align: left!important;
+	}
+
+	#usuario form input{
+		padding:  3px;
+	}
+
+
+	#usuario .boton{
+		text-align:  center;
+		font-size: 14px;
+		padding:  4px;
+		margin: 5px 25px 5px 25px;
+	}
+
 
 	#usuario p span{
 		font-size: 12px;
@@ -71,7 +104,6 @@ body{
 	#usuario a:hover{
 		text-decoration:  underline;
 		color: #f70331;
-
 	}
 
 	#imagen-cabecera{

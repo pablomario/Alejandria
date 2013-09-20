@@ -20,13 +20,24 @@
 	<body>
 		<div id="main">
 			<header>
-				<div id="usuario"><p>Iniciar Sesion</p></div>
+				<div id="usuario">
+					<form id="form_login" method="post" action="procesar.php">
+						<h1>Inicia sesion</h1>
+						<label>Usuario: </label><br/>					
+						<input type="text" name="user_login" placeholder="usuario" ><br/>
+
+						<label>Contrase&ntilde;a: </label><br/>		
+						<input type="password" name="pass_login" placeholder="password" ><br/>
+
+						<input type="submit" name="entrar" value="Iniciar Sesion" class="boton">					
+					</form>	
+				</div>
 				<div id="logo"><a href="#"><img src="img/alejandria-logo.png" alt="alejandria-logo" title="Alejandria Video Boxroom"/></a></div>
 				<div id="imagen-cabecera"></div>
 			</header>		
 			<section>	
 			<article class="registro">
-			
+			<!--
 				<h1>Registrate Ahora - Es Gratis</h1>
 				<form id="form_registro" name="form_registro">
 					
@@ -46,6 +57,7 @@
 					<input type="button" id="botonGuardar" value="Aceptar" class="boton awesome"
 					onclick="javascript:js_registroUsuario();">					
 				</form>	
+			-->
 			</article>				
 			<div id="blanco"></div>	
 			<article>
