@@ -11,7 +11,6 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 		<title>Alejandria</title>	
 	  	<link rel="stylesheet" href="css/estilo.css">
-
 	  	<link rel="stylesheet" href="css/reveal.css">	
 	  	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
 		<script type="text/javascript" src="jquery/jquery.reveal.js"></script>
@@ -37,7 +36,7 @@
 			</header>		
 			<section>	
 			<article class="registro">
-			<!--
+			
 				<h1>Registrate Ahora - Es Gratis</h1>
 				<form id="form_registro" name="form_registro">
 					
@@ -57,7 +56,7 @@
 					<input type="button" id="botonGuardar" value="Aceptar" class="boton awesome"
 					onclick="javascript:js_registroUsuario();">					
 				</form>	
-			-->
+			
 			</article>				
 			<div id="blanco"></div>	
 			<article>

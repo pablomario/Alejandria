@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 
 	<head>
@@ -14,8 +18,8 @@
 	<body>
 		<div id="main">
 			<header>
-					<div id="usuario"><p>Bienvenido Pablo ( <span><a href="#">Desconectar</a></span> ) </p></div>
-				<div id="logo"><a href="#"><img src="img/alejandria-logo.png" alt="alejandria-logo" title="Alejandria Video Boxroom"/></a></div>
+					<div id="usuario"><p>Bienvenido Pablo ( <span><a href="index.php">Desconectar</a></span> ) </p></div>
+				<div id="logo"><a href="index.php"><img src="img/alejandria-logo.png" alt="alejandria-logo" title="Alejandria Video Boxroom"/></a></div>
 			
 
 				<div id="imagen-cabecera"></div>
@@ -35,7 +39,7 @@
 				<h2>Videos</h2>
 				<?php
 					$conexion= new mysqli("127.0.0.1","root","root","alejandria");
-					$resultado=$conexion->query("select * from alejandria order by id desc");		
+					$resultado=$conexion->query("select * from alejandria where autor ='".$_SESSION['id']."' order by id desc");		
 					$contador=1;
 					echo "<ul>";			
 						while($row=$resultado->fetch_array(MYSQLI_ASSOC)){			
