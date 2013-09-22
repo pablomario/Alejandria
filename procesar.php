@@ -6,12 +6,12 @@ if($_POST['user_login']){
 	while($row=$resultado->fetch_array(MYSQLI_ASSOC) ){
 		$id_usuario=$row['id'];
 		$password=$row['contrasena'];
-		$email=$row['email'];
-		echo $id_usuario+$password+$email;
+		$email=$row['email'];	
 	}
-/*			
-if($password==$_POST['pass_login']){
+			
+if($password==md5($_POST['pass_login'])){
 	session_start();
+	$_SESSION['id']=$id_usuario;
 	$_SESSION['username']=$_POST['user_login'];
 	$_SESSION['password']=$password;
 	$_SESSION['email']=$email;
@@ -28,7 +28,7 @@ if($password==$_POST['pass_login']){
 	</script>
 	<?php
 }
-*/
+
 }
 
 ?>
