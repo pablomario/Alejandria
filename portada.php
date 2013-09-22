@@ -1,6 +1,6 @@
 <?php
 	session_start();	
-	$id=$_SESSION['id'];
+	$id_user=$_SESSION['id'];
 ?>
 
 <!DOCTYPE html>
@@ -38,23 +38,20 @@
 				<h1>Estanteria</h1>
 			<article class="izquierda">
 				<h2>Videos</h2>
-				<?php
-				
-					$conexion= new mysqli("127.0.0.1","root","root","alejandria");	
-					$sentencia="select * from alejandria where autor in($id,0) order by id desc";									
-					$resultado=$conexion->query($sentencia);
+				<?php				
+					$conexion= new mysqli("127.0.0.1","root","root","alejandria");															
+					$resultado=$conexion->query("select * from alejandria where autor in(".$id_user.",0) order by id desc");
 					$contador=1;
 					echo "<ul>";			
 						while($row=$resultado->fetch_array(MYSQLI_ASSOC)){			
-							echo"<li><a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'>",$row["nombre"],"</a></li>";
+							echo"<li><a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'>".$row["nombre"]."</a></li>";
 							echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"
 							</div><a class='close-reveal-modal'>&#215;</a></div>";
 							echo"<li>",$row["categoria"],"</li>";
-							echo"<li>",$row["tags"],"</li>";												
+							echo"<li>",$row["tags"],"</li>";		
 							$contador++;
-						}
-					echo"<ul/>";
-									
+						}						
+					echo"<ul/>";									
 					?>
 				</article>
 

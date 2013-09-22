@@ -22,7 +22,8 @@
 				<div id="usuario">
 					<form id="form_login" method="post" action="procesar.php">
 						<h1>Inicia sesion</h1>
-						<label>Usuario: </label><br/>					
+						<label>Usuario: </label><br/>	
+										
 						<input type="text" name="user_login" placeholder="usuario" ><br/>
 
 						<label>Contrase&ntilde;a: </label><br/>		
