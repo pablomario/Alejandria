@@ -179,25 +179,33 @@ article form span{
 	font-style:  italic; 
 }
 
-	article li {			
-		display: inline;
-		font-size:16px; 
-		text-decoration: none; 
-		float:left; 		
-		color:#1f1b16; 
-		padding: 6px; 	 
+
+
+	.content{
+		margin-bottom: 4px;		
+		padding:  4px;
 	}
 
-	article li a{						
-		color:#1f1b16;
-		text-decoration:  none;		
+	.content:hover{
+		background: #fcefe2;
 	}
 
-	article li a:hover{
-		padding: 6px; 
-		background-color: #df891c; 
+	.content a{
 		color:#1f1b16;
-		margin-top:-2px; 		
+		text-decoration:  none;			
+	}
+
+	.content a:hover{		
+		color:orange;		
+	}
+
+	.extra{	
+		text-transform:  uppercase;
+		font-size:  12px;		
+	}
+	.extra span{
+		color: #242424;
+		font-weight: bold; 
 	}
 
 .enlace-video{
