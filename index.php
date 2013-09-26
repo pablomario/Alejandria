@@ -74,9 +74,11 @@
 			</article>				
 				<div id="blanco"></div>
 			</section><!-- FIN WRAP -->
-			<footer>
-				<p>Alejandria Video boxroom &copy; 2013 - by: monquey</p>
-			</footer>
-		</div>			
+<?php
+	include("partes/footer.html");
+?>
+	
+		</div>	<!-- FIN MAIN -->
+		
 	</body>
 </html>

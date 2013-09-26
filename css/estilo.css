@@ -39,8 +39,7 @@ h1,h2{
 
 
 body{
-	background:  url("../img/fondo.png") top center ;
-	
+	background:  url("../img/fondo.png") top center ;	
 	font-family: 'Lato', sans-serif;
 	color:#1f1b16;
 }
@@ -48,8 +47,7 @@ body{
 #main{	
 	background:  #ffffff;
 	margin: 0 auto;
-	width: 870px;
-	border-bottom:  5px solid #e79915;
+	width: 90%;	
 	-webkit-box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
 	box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
 }
@@ -90,27 +88,55 @@ body{
 	}
 
 
-	#usuario p span{
-		font-size: 12px;
-		font-style: italic; 
-	}
+/* ====== HEADER  ====== */
 
-	#usuario a{
-		text-decoration:  none;
-		color:inherit ;
-	}
+#content-logo{
+	width:  100%;
+	border: solid 1px green;
+	margin: 0 auto;
+	height:  60px;
+}
 
-	#usuario a:hover{
-		text-decoration:  underline;
-		color: #f70331;
-	}
+#logo{
+	float: left;
+	width:  290px;
+	border: solid 1px red;
+}
 
-	#imagen-cabecera{
-		height:  225px;
-		width:  870px;
-		margin-top: -50px;
-		background:  url("../img/alejandria-biblioteca.png");
-	}
+#usuario_in{
+	margin: 12px;
+	padding:  7px;
+	text-align:  right;
+	display: inline; 
+	border: solid 1px blue;
+	float: right;
+	width:  400px;
+}
+
+#usuario_in span{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#usuario_in a{	
+	text-decoration: none;
+	color: inherit;
+}
+
+#usuario_in a:hover{
+	color: tomato;
+	text-decoration:  underline;
+
+}
+
+
+#imagen-cabecera{
+	height:  225px;
+	width: 100%;
+	background:  url("../img/alejandria-biblioteca.png");
+}
+
+
 
 nav{
 	margin-top:  -40px;
@@ -142,6 +168,11 @@ nav{
 		margin-top:-2px; 
 		padding-bottom:12px; 
 	}
+
+/* ====== FIN HEADER ====== */
+
+
+
 
 
 section{	
@@ -215,16 +246,21 @@ article form span{
 	font-weight: 900;
 }
 	
-footer{
+footer{	
 	color: #ffffff;
-	height:  28px;
-	background:  url("../img/bg.png");	
-	font-family: 'Amatic SC', cursive;	
+	height:  auto;
+	background:  #2e2113 url("../img/bg.png") center top repeat-x;	
+
+}
+
+footer .pie{
+	text-align: center;
+	padding-top:  40px;
 }
 
 footer p{
 	font-size:  18px;
 	padding: 2px;
-	text-align:  center;
+
 }
 

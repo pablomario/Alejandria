@@ -1,6 +1,7 @@
 <?php
 	session_start();	
 	$id_user=$_SESSION['id'];
+	$_SESSION['username'];
 ?>
 
 <!DOCTYPE html>
@@ -18,21 +19,9 @@
 	</head>
 	<body>
 		<div id="main">
-			<header>
-					<div id="usuario"><p>Bienvenido Pablo ( <span><a href="index.php">Desconectar</a></span> ) </p></div>
-				<div id="logo"><a href="index.php"><img src="img/alejandria-logo.png" alt="alejandria-logo" title="Alejandria Video Boxroom"/></a></div>
-			
-
-				<div id="imagen-cabecera"></div>
-			</header>
-			<nav>
-				<ul id="navegacion">
-					<li><a href="portada.php">Portada</a></li>
-					<li><a href="insertar.php">Agregar Video</a></li>
-					<li><a href="#">Agregar Libro</a></li>
-				</ul>
-			</nav>
-			<div id="blanco"></div>
+<?php
+	include("partes/cabecera.html");
+?>			
 
 			<section class="wrap">
 				<h1>Estanteria</h1>
@@ -80,9 +69,10 @@
 			
 				<div id="blanco"></div>
 			</section><!-- FIN WRAP -->
-			<footer>
-				<p>Alejandria Video boxroom &copy; 2013 - by: monquey</p>
-			</footer>
-		</div>			
+<?php
+	include("partes/footer.html");
+?>	
+		</div>	<!-- FIN MAIN -->
+	
 	</body>
 </html>
