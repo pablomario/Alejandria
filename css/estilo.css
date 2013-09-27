@@ -1,10 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato);
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans)
 html, body {  }
 
 *{
-
+	font-family: 'Open Sans', sans-serif;
 	margin:0;
 	padding:  0;	
 }
@@ -18,20 +16,15 @@ ul, li {
 	clear: inherit;
 }
 
-h1,h2{
-	font-size:  2.2em;
-	font-family: 'Amatic SC', cursive;
-}
-
 .izquierda{
 	margin: 2px;
-	width:  400px;
+	width:  65%;
 	float: left;
 }
 
 .derecha{
 	margin: 2px;
-	width:  400px;
+	width:  25%;
 	float: right;
 }
 
@@ -39,13 +32,13 @@ h1,h2{
 
 
 body{
-	background:  url("../img/fondo.png") top center ;	
+	background:  url("../img/main-bg.jpg") top center ;	
 	font-family: 'Lato', sans-serif;
 	color:#1f1b16;
 }
 
 #main{	
-	background:  #ffffff;
+	background:  #eaedf2;
 	margin: 0 auto;
 	width: 90%;	
 	-webkit-box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
@@ -64,7 +57,6 @@ body{
 		padding:  7px;
 		-webkit-box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
 		box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
-
 	}
 
 	#usuario form h1{
@@ -91,8 +83,8 @@ body{
 /* ====== HEADER  ====== */
 
 #content-logo{
-	width:  100%;
-	border: solid 1px green;
+	width:  100%;	
+	border-bottom: solid 1px #ffffff;
 	margin: 0 auto;
 	height:  60px;
 }
@@ -100,15 +92,13 @@ body{
 #logo{
 	float: left;
 	width:  290px;
-	border: solid 1px red;
 }
 
 #usuario_in{
 	margin: 12px;
 	padding:  7px;
 	text-align:  right;
-	display: inline; 
-	border: solid 1px blue;
+	display: inline; 	
 	float: right;
 	width:  400px;
 }
@@ -126,26 +116,24 @@ body{
 #usuario_in a:hover{
 	color: tomato;
 	text-decoration:  underline;
-
 }
-
 
 #imagen-cabecera{
-	height:  225px;
+	height:  90px;
 	width: 100%;
-	background:  url("../img/alejandria-biblioteca.png");
+	background:  url("../img/alejandria-biblioteca.png") top center repeat-x;
 }
-
 
 
 nav{
 	margin-top:  -40px;
 	height:  41px;
 	width:  100%;
-	background: rgba(36,36,36,0.7);
+	background: rgba(36,36,36,0.9);
 }
 
 	#navegacion{
+		float: right;
 		margin-left: 5px;
 		padding:  0;
 	}
@@ -164,27 +152,33 @@ nav{
 
 	#navegacion li a:hover{
 		background-color: #df891c; 
-		color:#1f1b16;
-		margin-top:-2px; 
-		padding-bottom:12px; 
+		color:#1f1b16;		
 	}
 
 /* ====== FIN HEADER ====== */
 
-
-
-
-
-section{	
-	width:  820px;	
-	margin: 0 auto;	
-	padding:  7px;
+#wrap{
+	width:  98%;	
+	margin: 0 auto;		
 	clear: both;
 }
 
-article form{
-	padding: 4px;	
-	
+
+/* ====== GENERAL ARTICLE ====== */
+
+article{
+	background:  #ffffff;
+	margin-bottom: 5px;
+}
+
+/* ====== SECTION ====== */
+
+section article{
+	padding:  20px;
+}
+
+section article form{
+	padding: 4px;		
 }
 
 .video{
@@ -197,35 +191,39 @@ article form{
 	text-align:  center;
 }
 
-article form input{
+section article form input{
 	height:  20px;
 	padding: 2px;
 	margin:  4px;
 }
 
-article form span{
+section article form span{
 	padding-left:  50px;
 	font-size:  12px;
 	font-style:  italic; 
 }
 
+section article h2{
+	color: #8c8c8c!important;	
+}
 
-
-	.content{		
-		margin-bottom: 7px;		
+	.content{	
+		color: #8c8c8c!important;			
 		padding:  7px;
-		
-		-webkit-box-shadow: 1px 1px 3px 3px rgba(36, 36, 36, 0.1);
-		box-shadow: 1px 1px 3px 3px rgba(36, 36, 36, 0.1);
+		border-bottom:  1px solid #8c8c8c;		
+	}
+
+	.content:last-child{
+		border-bottom: none;
 	}
 
 	.content:hover{
-		background: #fcefe2;
+		color: #000000;
 	
 	}
 
 	.content a{
-		color:#1f1b16;
+		color:  inherit;		
 		text-decoration:  none;			
 	}
 
@@ -237,8 +235,7 @@ article form span{
 		text-transform:  uppercase;
 		font-size:  12px;		
 	}
-	.extra span{
-		color: #242424;
+	.extra span{		
 		font-weight: bold; 
 	}
 
@@ -246,21 +243,55 @@ article form span{
 	font-weight: 900;
 }
 	
+/* ====== FIN SECTION ====== */
+
+
+/* ====== ASIDE ====== */
+
+
+aside article {
+	margin-bottom:  20px!important;
+}
+
+
+aside article h2{	
+	text-align:  left;
+	padding: 4px 4px 4px 20px;
+	margin-bottom: 10px;
+	background:  #242424;
+	color: #ffffff;
+}
+
+aside article p {
+	text-align: center;
+}
+
+
+
+/* ====== FIN ASIDE ====== */
+
+
 footer{	
 	color: #ffffff;
+	min-height: 30px;
 	height:  auto;
 	background:  #2e2113 url("../img/bg.png") center top repeat-x;	
-
 }
 
 footer .pie{
-	text-align: center;
-	padding-top:  40px;
+	font-size:  12px;
+	text-align: center;	
 }
 
-footer p{
-	font-size:  18px;
-	padding: 2px;
+footer p{	
+	padding-top: 7px;
+}
 
+footer a{
+	color: inherit;
+}
+
+footer a:hover{
+	color: orange;
 }
 

@@ -1,0 +1,15 @@
+PARTES
+
+Buscador (documentos, categoria y tags)
+
+Uplaoder
+
+Gestor de Documentos (bajas y modificacion)
+
+Borrado de Documentos
+
+Gestor Categorias 
+
+Opciones de Usuario
+
+PANEL ADMINISTRACION USUARIOS
