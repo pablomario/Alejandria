@@ -18,13 +18,12 @@ ul, li {
 
 .izquierda{
 	margin: 2px;
-	width:  65%;
+	width:  auto;
 	float: left;
 }
 
 .derecha{
 	margin: 2px;
-	width:  25%;
 	float: right;
 }
 
@@ -174,6 +173,7 @@ article{
 /* ====== SECTION ====== */
 
 section article{
+	width:  600px;
 	padding:  20px;
 }
 
@@ -247,6 +247,11 @@ section article h2{
 
 
 /* ====== ASIDE ====== */
+
+
+aside{
+	width:  300px;
+}
 
 
 aside article {
