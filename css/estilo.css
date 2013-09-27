@@ -16,14 +16,12 @@ ul, li {
 	clear: inherit;
 }
 
-.izquierda{
-	margin: 2px;
-	width:  auto;
+.izquierda{		
 	float: left;
 }
 
-.derecha{
-	margin: 2px;
+.derecha{	
+	margin-left: 10px;
 	float: right;
 }
 
@@ -31,7 +29,7 @@ ul, li {
 
 
 body{
-	background:  url("../img/main-bg.jpg") top center ;	
+	background:  url("../img/main-bg.jpg") top center fixed;	
 	font-family: 'Lato', sans-serif;
 	color:#1f1b16;
 }
@@ -39,9 +37,9 @@ body{
 #main{	
 	background:  #eaedf2;
 	margin: 0 auto;
-	width: 90%;	
-	-webkit-box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
-	box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
+	width: 980px;	
+	-webkit-box-shadow: 1px 1px 20px 6px rgba(255, 174, 0, 0.2);
+	box-shadow: 1px 1px 20px 6px rgba(255, 174, 0, 0.2);
 }
 
 	#usuario{
@@ -118,17 +116,18 @@ body{
 }
 
 #imagen-cabecera{
-	height:  90px;
+	height:  100px;
 	width: 100%;
-	background:  url("../img/alejandria-biblioteca.png") top center repeat-x;
+	background:  url("../img/alejandria-biblioteca.png") center center repeat-x;
 }
 
 
 nav{
 	margin-top:  -40px;
-	height:  41px;
+	height:  40px;
 	width:  100%;
-	background: rgba(36,36,36,0.9);
+	background: #242424;
+	border-bottom: 1px solid #000000;
 }
 
 	#navegacion{
@@ -150,14 +149,14 @@ nav{
 	}
 
 	#navegacion li a:hover{
-		background-color: #df891c; 
+		background-color: orange; 
 		color:#1f1b16;		
 	}
 
 /* ====== FIN HEADER ====== */
 
 #wrap{
-	width:  98%;	
+	width:  96%;
 	margin: 0 auto;		
 	clear: both;
 }
@@ -165,16 +164,23 @@ nav{
 
 /* ====== GENERAL ARTICLE ====== */
 
-article{
+article{	
 	background:  #ffffff;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+article h2{	
+	text-align:  left;
+	padding: 4px 4px 4px 20px;
+	margin-bottom: 10px;
+	background:  #242424;
+	color: #ffffff;
 }
 
 /* ====== SECTION ====== */
 
 section article{
-	width:  600px;
-	padding:  20px;
+	width:  620px;	
 }
 
 section article form{
@@ -204,7 +210,13 @@ section article form span{
 }
 
 section article h2{
-	color: #8c8c8c!important;	
+	background:  #242424;
+	color: #ffffff;	
+}
+
+.contenido{
+	margin-top: -20px;
+	padding:  10px;
 }
 
 	.content{	
@@ -259,13 +271,7 @@ aside article {
 }
 
 
-aside article h2{	
-	text-align:  left;
-	padding: 4px 4px 4px 20px;
-	margin-bottom: 10px;
-	background:  #242424;
-	color: #ffffff;
-}
+
 
 aside article p {
 	text-align: center;
@@ -280,7 +286,7 @@ footer{
 	color: #ffffff;
 	min-height: 30px;
 	height:  auto;
-	background:  #2e2113 url("../img/bg.png") center top repeat-x;	
+	background: url("../img/branding.png.jpg") center top repeat;	
 }
 
 footer .pie{
