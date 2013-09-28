@@ -18,12 +18,15 @@
 	</head>
 	<body>
 		<div id="main">
+		
 			<header>
-				<div id="usuario">
-					<form id="form_login" method="post" action="procesar.php">
-						<h1>Inicia sesion</h1>
-						<label>Usuario: </label><br/>	
-										
+	<div id="content-logo">
+		<div id="logo">
+			<a href="index.php"><img src="img/alejandria-logo.png" alt="alejandria-logo" title="Alejandria"/></a>
+		</div>
+		<div id="usuario">
+					<form id="form_login" method="post" action="procesar.php">					
+						<label>Usuario: </label><br/>											
 						<input type="text" name="user_login" placeholder="usuario" ><br/>
 
 						<label>Contrase&ntilde;a: </label><br/>		
@@ -32,13 +35,28 @@
 						<input type="submit" name="entrar" value="Iniciar Sesion" class="boton">					
 					</form>	
 				</div>
-				<div id="logo"><a href="#"><img src="img/alejandria-logo.png" alt="alejandria-logo" title="Alejandria Video Boxroom"/></a></div>
-				<div id="imagen-cabecera"></div>
-			</header>		
-			<section>	
-			<article class="registro">
-			
-				<h1>Registrate Ahora - Es Gratis</h1>
+	</div>	
+	<div id="imagen-cabecera"></div> <!-- IMAGEN BANNER -->
+	<nav>
+		<ul id="navegacion">
+			<li><a href="#">¿Alejandria?</a></li>
+			<li><a href="#">Staff</a></li>
+			<li><a href="#">Legal</a></li>
+			<li><a href="https://github.com/pablomario/Alejandria.git">GitHub</a></li>	
+
+		</ul>
+	</nav>
+</header>
+<div id="blanco"></div> <!-- SALTO  O ESPACIO EN BLANCO -->
+<div id="wrap">	
+
+
+
+
+
+			<article>	
+			<section class="registro">			
+				<h2>Registrate Ahora - Es Gratis</h2>
 				<form id="form_registro" name="form_registro">
 					
 					<label for="user">Usuario: </label><br/>					
@@ -58,9 +76,9 @@
 					onclick="javascript:js_registroUsuario();">					
 				</form>	
 			
-			</article>				
+			</section>				
 			<div id="blanco"></div>	
-			<article>
+					<section>
 				<h2>Tu Biblioteca Privada y Personal</h2>
 				<p>Ya puedes tener tu propia <b>Biblioteca</b> y <b>Emeroteca</b> privada gracias <b>Alejandria</b>. 
 					<ul>
@@ -71,9 +89,12 @@
 						<li>... y todo <b>Gratis!</b></li>
 					</ul>						
 				</p>
-			</article>				
+			</section>				
 				<div id="blanco"></div>
-			</section><!-- FIN WRAP -->
+	
+			</article>
+
+		</div><!-- FIN WRAP -->
 <?php
 	include("partes/footer.html");
 ?>
