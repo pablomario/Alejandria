@@ -4,7 +4,8 @@ html, body {  }
 *{
 	font-family: 'Open Sans', sans-serif;
 	margin:0;
-	padding:  0;	
+	padding:  0;
+	text-decoration:  none;	
 }
 
 ul, li {
@@ -26,6 +27,41 @@ ul, li {
 }
 
 /*    FIN RESET Y BASICOS    */
+
+
+/* ====== BOTONES ====== */
+
+
+.boton {
+	margin: 10px auto;
+	background-color:#ededed;	
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;	
+	font-size:16px;
+	font-weight:bold;
+	font-style:normal;
+	line-height:60px;
+	height:40px;
+	width:150px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.boton:hover {
+	background-color:#dfdfdf;
+}.boton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+/* ====== FIN BOTONES ====== */
+
+
+
 
 
 body{
@@ -56,15 +92,12 @@ body{
 	}
 
 	#usuario form{	
-		margin-top: -20px;		
-		background: url("../img/form-bg.png") top center repeat-x;
+		text-align:  center;
+		margin-top: -20px;	
+		background: orange;
 		padding:  7px;
 		-webkit-box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
 		box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
-	}
-
-	#usuario form h1{
-			text-align:  center;
 	}
 
 	#usuario form label{	
@@ -75,13 +108,8 @@ body{
 		padding:  3px;
 	}
 
+	
 
-	#usuario .boton{
-		text-align:  center;
-		font-size: 14px;
-		padding:  4px;
-		margin: 5px 25px 5px 25px;
-	}
 
 
 /* ====== HEADER  ====== */
@@ -173,12 +201,13 @@ nav{
 
 /* ====== GENERAL ARTICLE ====== */
 
-article{	
+section{	
 	background:  #ffffff;
 	margin-bottom: 10px;
+	color: #8c8c8c!important;	
 }
 
-article h2{	
+section h2{	
 	text-align:  left;
 	padding: 4px 4px 4px 20px;
 	margin-bottom: 10px;
@@ -188,12 +217,16 @@ article h2{
 
 /* ====== SECTION ====== */
 
-section article{
-	width:  620px;	
+article section{
+	width:  620px;		
 }
 
-section article form{
+article section form{
 	padding: 4px;		
+}
+
+.oscuro{
+	color:#242424!important;
 }
 
 .video{
@@ -203,22 +236,22 @@ section article form{
 }
 
 .registro{
-	text-align:  center;
+	text-align: center;
 }
 
-section article form input{
+article section form input{
 	height:  20px;
 	padding: 2px;
 	margin:  4px;
 }
 
-section article form span{
+article section form span{
 	padding-left:  50px;
 	font-size:  12px;
 	font-style:  italic; 
 }
 
-section article h2{
+article section h2{
 	background:  #242424 url("../img/esquina.png") right top no-repeat;
 	color: #ffffff;	
 }
@@ -229,7 +262,7 @@ section article h2{
 }
 
 	.content{	
-		color: #8c8c8c!important;			
+				
 		padding:  7px;
 		border-bottom:  1px solid #8c8c8c;		
 	}
@@ -239,8 +272,7 @@ section article h2{
 	}
 
 	.content:hover{
-		color: #000000;
-	
+		color: #000000;	
 	}
 
 	.content a{
@@ -274,15 +306,12 @@ aside{
 	width:  300px;
 }
 
-
-aside article {
+aside section {
 	margin-bottom:  20px!important;
 }
 
 
-
-
-aside article p {
+aside section p {
 	text-align: center;
 }
 
