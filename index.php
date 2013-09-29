@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-<!-- 
- * Markup for jQuery Reveal Plugin 1.0
- * www.ZURB.com/playground
- * Copyright 2010, ZURB
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- -->
+
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 		<title>Alejandria</title>	
 	  	<link rel="stylesheet" href="css/estilo.css">	  
-		<script type="text/javascript" src="js/funciones.js"></script>				
+		<script type="text/javascript" src="js/funciones.js"></script>		  	
 	</head>
 	<body>
 		<div id="main">		
@@ -110,3 +104,4 @@
 		
 	</body>
 </html>
+
