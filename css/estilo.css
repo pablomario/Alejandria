@@ -68,7 +68,6 @@ a{
 
 
 
-
 body{
 	background:  url("../img/sandpaper.png") top center fixed;	
 	font-family: 'Lato', sans-serif;
@@ -146,7 +145,7 @@ nav{
 	margin-top:  -40px;
 	height:  40px;
 	width:  100%;
-	background: #242424;
+	background: #242424 url("../img/stressed_linen.png");
 	border-bottom: 1px solid #000000;
 }
 
@@ -441,6 +440,24 @@ footer a:hover{
 	color: orange;
 }
 
+/* ====== BUSCADOR ====== */
 
+.buscador{
+	margin: 50px auto;
+	text-align:  center;
+}
 
+.buscador input#buscar{
+	padding: 7px;
+}
+
+.buscador input#submit{
+	padding:  7px;
+	border: none;
+}
+
+.buscador input#submit:hover{
+	padding:  7px;
+	border: solid 1px #242424;
+}
 

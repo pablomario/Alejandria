@@ -1,7 +1,9 @@
 <?php
 	session_start();	
 	$id_user=$_SESSION['id'];
+	$_SESSION['username'];
 ?>
+
 <!DOCTYPE html>
 
 	<head>
@@ -12,9 +14,8 @@
 
 	  	<link rel="stylesheet" href="css/reveal.css">	
 	  	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
-	  	<script type="text/javascript" src="jquery/rts.js"></script>		
-		<script type="text/javascript" src="jquery/jquery.reveal.js"></script>
-		<script type="text/javascript" src="js/funciones.js"></script>		
+		<script type="text/javascript" src="jquery/jquery.reveal.js"></script>	
+		<script type="text/javascript" src="js/funciones.js"></script>			
 	</head>
 	<body>
 		<div id="main">
@@ -23,25 +24,12 @@
 			<div id="wrap">				
 			<article class="izquierda">
 				<section>
-					<h2>Agregar Nuevo Documento</h2>	
+					<h2>Busqueda Avanzada</h2>	
 					<div class="contenido">
-						<form id="form_insertarVideo" name="form_insertarVideo" >
-
-							<label for="titulo">Titulo: </label><br/>					
-							<input type="text" id="titulo" name="titulo" required aria-required="true"><br/>
-
-							<label for="categoria">Categoria: </label><br/>		
-							<input type="text" id="categoria" name="categoria" required aria-required="true"><br/>
-
-							<label for="tags">Tags: </label><br/>		
-							<input type="text" id="tags" name="tags" required aria-required="true"><br/>					
-
-							<label for="video">Seleccionar Documento: </label><br/>		
-							<textarea type="text/html" id="video" name="video" rows="4" cols="40"></textarea><br/>					
-
-							<input type="button" id="botonGuardar" value="Aceptar" class="boton awesome"
-							onclick="javascript:js_insertarVideo();">					
-						</form>	
+						<div class="buscador">
+							<input type="text" size="30" placeholder="Buscar..." autocomplete="off" id="buscar" /> 
+	                 		<input type="button" value="Buscar" size="80" id="submit" /> 
+	                 	</div>  	
 					</div>
 				</section>				
 			</article>

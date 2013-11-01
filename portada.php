@@ -19,9 +19,7 @@
 	</head>
 	<body>
 		<div id="main">
-<?php
-	include("partes/cabecera.html");
-?>			
+<?php include("partes/cabecera.html"); ?>			
 
 			<div id="wrap">				
 			<article class="izquierda">
@@ -66,28 +64,28 @@
 					</div>
 				</section>
 			</article>
-				<aside class="derecha">
-					<section>
-						<h2>Noticias y Mas</h2>
-						<p>
-							<a href="https://gnu.org/gnu30"><img src="https://static.fsf.org/nosvn/misc/GNU_30th_badge.png" 
-								alt="[ Celebrate 30 years of GNU! ]" width="250px" heigt="auto" /></a>	
-						</p>
-					</section>
+			<aside class="derecha">
+				<section>
+					<h2>Noticias y Mas</h2>
+					<p>
+						<a href="https://gnu.org/gnu30"><img src="https://static.fsf.org/nosvn/misc/GNU_30th_badge.png" 
+							alt="[ Celebrate 30 years of GNU! ]" width="250px" heigt="auto" /></a>	
+					</p>
+				</section>
 
-					<section>
-						<h2>Proyecto en GitHub</h2>
-						<p>
-							<a href="https://github.com/pablomario/Alejandria.git">
-								<img src="img/Octocat.png" height="auto" width="250px" alt="Github logo"/>					
-							</a>	
-						</p>
-					</section>
-				</aside>
+				<section>
+					<h2>Proyecto en GitHub</h2>
+					<p>
+						<a href="https://github.com/pablomario/Alejandria.git">
+							<img src="img/Octocat.png" height="auto" width="250px" alt="Github logo"/>					
+						</a>	
+					</p>
+				</section>
+			</aside>
 						
 			
 				<div id="blanco"></div>
-			</div><!-- FIN WRAP -->
+		</div><!-- FIN WRAP -->
 
 
 <?php
