@@ -78,11 +78,16 @@
 			</article>
 			<aside class="derecha">
 					<section>
-						<h2>Noticias y Mas</h2>
 						<p>
-							<a href="https://gnu.org/gnu30"><img src="https://static.fsf.org/nosvn/misc/GNU_30th_badge.png" 
-								alt="[ Celebrate 30 years of GNU! ]" width="250px" heigt="auto" /></a>	
-						</p>
+						<div class="g-person" data-href="//plus.google.com/116013699202610954014" data-rel="author"></div>
+						</p>			
+					<script type="text/javascript">
+						(function() {
+						var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+						po.src = 'https://apis.google.com/js/plusone.js';
+						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+						})();
+					</script>
 					</section>
 
 					<section>
@@ -93,6 +98,9 @@
 							</a>	
 						</p>
 					</section>
+
+
+
 				</aside>
 			<div id="blanco"></div>
 		</div><!-- FIN WRAP -->
