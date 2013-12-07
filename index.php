@@ -79,7 +79,7 @@
 			<aside class="derecha">
 					<section>
 						<p>
-						<div class="g-person" data-href="//plus.google.com/116013699202610954014" data-rel="author"></div>
+						<div class="g-person" data-href="//plus.google.com/+PabloMGP" data-rel="author"></div>
 						</p>			
 					<script type="text/javascript">
 						(function() {
