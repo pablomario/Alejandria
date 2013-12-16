@@ -22,7 +22,7 @@
 <?php include("partes/cabecera.html"); ?>			
 
 			<div id="wrap">				
-			<article class="izquierda">
+			<article>
 				<section>
 					<h2>Mas Recientes</h2>	
 					<div class="contenido">
@@ -32,13 +32,14 @@
 							$contador=1;	
 													
 							while($row=$resultado->fetch_array(MYSQLI_ASSOC)){	
-							echo"<div class='content'>";									
-							echo"<h3><a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'>",$row["nombre"],"</a></h3>";
-							echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"
-							</div><a class='close-reveal-modal'>&#215;</a></div>";
+							echo"<div class='libros'>";									
+							echo"<a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='zoom' src='libros/portada_default.png'/></a>";
+							echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"</div>"; 
+							echo "<div class='extra'><h3>",$row["nombre"],"</h3></div>";
 							echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> | <span>TAGS: </span> <a href='#'>",$row["categoria"],"</a></div>";																							
+							echo "</div>"; //div del reveal
 							$contador++;
-							echo "</div>";
+							echo "</div>";//div del content
 							}									
 						?>	
 					</div>
@@ -64,24 +65,7 @@
 					</div>
 				</section>
 			</article>
-			<aside class="derecha">
-				<section>
-					<h2>Noticias y Mas</h2>
-					<p>
-						<a href="https://gnu.org/gnu30"><img src="https://static.fsf.org/nosvn/misc/GNU_30th_badge.png" 
-							alt="[ Celebrate 30 years of GNU! ]" width="250px" heigt="auto" /></a>	
-					</p>
-				</section>
-
-				<section>
-					<h2>Proyecto en GitHub</h2>
-					<p>
-						<a href="https://github.com/pablomario/Alejandria.git">
-							<img src="img/Octocat.png" height="auto" width="250px" alt="Github logo"/>					
-						</a>	
-					</p>
-				</section>
-			</aside>
+		
 						
 			
 				<div id="blanco"></div>

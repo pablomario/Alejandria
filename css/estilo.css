@@ -359,13 +359,30 @@ article section h2{
 	color: #ffffff;	
 }
 
-.contenido{
-	margin-top: -20px;
-	padding:  10px;
+.contenido{	
+	padding:  5px;
 }
 
-	.content{	
-				
+	.libros{
+		padding: 5px 5px 0px 5px;
+		display: inline-block;
+	}
+
+	.libros img{
+		opacity: 0.5;
+		transition: 1.5s ease;
+ 		-moz-transition: 1.5s ease; /* Firefox */
+ 		-webkit-transition: 1.5s ease; /* Chrome - Safari */
+ 		-o-transition: 1.5s ease; /* Opera */
+	}
+	.libros img:hover{
+		opacity: 1;
+	}
+
+
+
+
+	.content{				
 		padding:  7px;
 		border-bottom:  1px solid #8c8c8c;		
 	}
