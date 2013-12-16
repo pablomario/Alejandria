@@ -112,7 +112,14 @@ body{
 		padding:  3px;
 	}
 
-	
+	#errorLogin{
+		background: tomato;
+		width: 100%;
+		height: 40px;
+		text-align: center;
+		font-weight: 700;
+		clear: both;
+	}
 
 
 

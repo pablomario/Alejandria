@@ -1,4 +1,12 @@
+<?php
+	$error=0;
+	if(!empty($_GET["error_login"])){
+		$error = $_GET["error_login"];
+	}
+?>
 <!DOCTYPE html>
+
+
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -8,7 +16,14 @@
 		<script type="text/javascript" src="js/funciones.js"></script>		  	
 	</head>
 	<body>
-		<div id="main">		
+		<div id="main">	
+			<?php
+				if($error==1){
+					echo "<div id='errorLogin'><p> Error al Iniciar Sesion, Intentelo de nuevo</p></div>";
+				}else if ($error==2){
+					echo "<div id='errorLogin'><p>Tu usuario o contraseña es incorrecto</p></div>";
+				}
+			?>
 			<header>
 			<div id="content-logo">
 				<div id="logo">
