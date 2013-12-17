@@ -25,44 +25,25 @@
 				<section>
 					<h2>Agregar Nuevo Documento</h2>	
 					<div class="contenido">
-						<form id="form_insertarVideo" name="form_insertarVideo" >
+						<form id="form_nuevoLibro" method="post" action="nuevoLibro.php">
 
 							<label for="titulo">Titulo: </label><br/>					
 							<input type="text" id="titulo" name="titulo" required aria-required="true"><br/>
 
+							<label for="video">Autor: </label><br/>	
+							<input  type="text/html" id="autor" name="autor"><br/>							
+						
+							<label for="video">Seleccionar Documento: </label><br/>	
+							<input  type="text/html" id="contenido" name="contenido" required aria-required="true"><br/>
+
 							<label for="categoria">Categoria: </label><br/>		
-							<input type="text" id="categoria" name="categoria" required aria-required="true"><br/>
-
-							<label for="tags">Tags: </label><br/>		
-							<input type="text" id="tags" name="tags" required aria-required="true"><br/>					
-
-							<label for="video">Seleccionar Documento: </label><br/>		
-							<textarea type="text/html" id="video" name="video" rows="4" cols="40"></textarea><br/>					
-
-							<input type="button" id="botonGuardar" value="Aceptar" class="boton awesome"
-							onclick="javascript:js_insertarVideo();">					
+							<input type="text" id="categoria" name="categoria"><br/>	
+							
+							<input type="submit" name="Aceptar" value="Aceptar" class="boton awesome">										
 						</form>	
 					</div>
 				</section>				
-			</article>
-			<aside class="derecha">
-				<section>
-					<h2>Noticias y Mas</h2>
-					<p>
-						<a href="https://gnu.org/gnu30"><img src="https://static.fsf.org/nosvn/misc/GNU_30th_badge.png" 
-							alt="[ Celebrate 30 years of GNU! ]" width="250px" heigt="auto" /></a>	
-					</p>
-				</section>
-
-				<section>
-					<h2>Proyecto en GitHub</h2>
-					<p>
-						<a href="https://github.com/pablomario/Alejandria.git">
-							<img src="img/Octocat.png" height="auto" width="250px" alt="Github logo"/>					
-						</a>	
-					</p>
-				</section>
-			</aside>
+			</article>			
 						
 			
 				<div id="blanco"></div>

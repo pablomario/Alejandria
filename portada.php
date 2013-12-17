@@ -32,14 +32,15 @@
 							$contador=1;	
 													
 							while($row=$resultado->fetch_array(MYSQLI_ASSOC)){	
-							echo"<div class='libros'>";									
-							echo"<a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='zoom' src='libros/portada_default.png'/></a>";
-							echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"</div>"; 
-							echo "<div class='extra'><h3>",$row["nombre"],"</h3></div>";
-							echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> | <span>TAGS: </span> <a href='#'>",$row["categoria"],"</a></div>";																							
-							echo "</div>"; //div del reveal
-							$contador++;
-							echo "</div>";//div del content
+								echo"<div class='libros'>";									
+								echo"<a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='zoom' src='libros/portada_default.png'/></a>";
+								echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"</div>"; 
+								echo "<div class='extra'><h3>",$row["titulo"],"</h3></div>";
+								echo "<div class='extra'><h4>",$row["autor"],"</h4></div>";
+								echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> </div>";																							
+								echo "</div>"; //div del reveal
+								$contador++;
+								echo "</div>";//div del content
 							}									
 						?>	
 					</div>
@@ -53,13 +54,14 @@
 							$contador=1;	
 													
 							while($row=$resultado->fetch_array(MYSQLI_ASSOC)){	
-							echo"<div class='content'>";									
-							echo"<h3><a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'>",$row["nombre"],"</a></h3>";
-							echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"
-							</div><a class='close-reveal-modal'>&#215;</a></div>";
-							echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> | <span>TAGS: </span> <a href='#'>",$row["categoria"],"</a></div>";																							
-							$contador++;
-							echo "</div>";
+								echo"<div class='content'>";									
+								echo"<h3><a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'>",$row["titulo"],"</a></h3>";
+								echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"
+								</div><a class='close-reveal-modal'>&#215;</a></div>";							
+								echo "<div class='extra'><h4>",$row["autor"],"</h4></div>";
+								echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> </div>";																							
+								$contador++;
+								echo "</div>";
 							}									
 						?>	
 					</div>

@@ -1,14 +1,14 @@
 
 
 
-function js_insertarVideo(){
+function nuevoLibro(){
 	$.ajax({
 		url:'./js/gestion.php',
 		type:'post',
-		data:'funcion=insertarVideo&'+$('#form_insertarVideo').serialize(),
+		data:'funcion=nuevoLibro&'+$('#form_nuevoLibro').serialize(),
 		async:false,
 		success:function(respuesta){
-		alert(respuesta);
+			alert(respuesta);
 		}
 	});
 }

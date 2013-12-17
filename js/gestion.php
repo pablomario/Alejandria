@@ -1,4 +1,5 @@
 <?php
+
  $funcion=$_POST["funcion"]; 
  if(!empty($funcion))
   call_user_func($funcion);
@@ -23,15 +24,15 @@
 	}
 
 
-	function insertarVideo(){
-		$titulo=$_POST['titulo'];
-		$categoria=$_POST['categoria'];
-		$tags=$_POST['tags'];
+	function nuevoLibro(){
+		$titulo=$_POST['titulo'];		
 		$autor=$_POST['autor'];
-		$video=$_POST['video'];
-		if(!empty($titulo) && !empty($categoria) && !empty($tags) && !empty($autor) && !empty($video)) {	
-		$conexion= new mysqli("127.0.0.1","root","root","alejandria");	
-		$conexion->query("insert into alejandria(nombre,categoria,tags,autor,contenido) values('$titulo','$categoria','$tags','$autor','$video')");
+		$contenido=$_POST['contenido'];
+		$categoria=$_POST['categoria'];			
+		if(!empty($titulo) && !empty($contenido)) {	
+			$conexion= new mysqli("127.0.0.1","root","root","alejandria");	
+			$conexion->query("insert into alejandria(titulo,autor,contenido,categoria,id_usuario) 
+				values('$titulo','$autor','$contenido','$categoria','$usuario','$id_user',)");
 			echo "Insertado Correctamente";
 		} else {
 			echo "Error, algun campo esta vacio";
