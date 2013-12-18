@@ -12,72 +12,70 @@
 		<title>Alejandria</title>	
 	  	<link rel="stylesheet" href="css/estilo.css">
 
-	  	<link rel="stylesheet" href="css/reveal.css">	
+	  	<link rel="stylesheet" href="css/reveal.css">
 	  	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
-		<script type="text/javascript" src="jquery/jquery.reveal.js"></script>	
-		<script type="text/javascript" src="js/funciones.js"></script>			
+		<script type="text/javascript" src="jquery/jquery.reveal.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>
 	</head>
 	<body>
 		<div id="main">
-<?php include("partes/cabecera.html"); ?>			
+<?php include("partes/cabecera.html"); ?>
 
-			<div id="wrap">				
+			<div id="wrap">
 			<article>
 				<section>
-					<h2>Mas Recientes</h2>	
+					<h2>Mis Libros</h2>
 					<div class="contenido">
 						<?php
-							$conexion= new mysqli("127.0.0.1","root","root","alejandria");					
-							$resultado=$conexion->query("select * from alejandria where id_usuario in($id_user,0) order by id desc");		
-							$contador=1;	
-													
-							while($row=$resultado->fetch_array(MYSQLI_ASSOC)){	
-								echo"<div class='libros'>";									
-								echo"<a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='zoom' src='libros/portada_default.png'/></a>";
-								echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"</div>"; 
+							$conexion= new mysqli("127.0.0.1","root","root","alejandria");
+							$resultado=$conexion->query("select * from alejandria where id_usuario in($id_user,0) order by id desc");
+							$contador=1;
+
+							while($row=$resultado->fetch_array(MYSQLI_ASSOC)){
+								echo"<div class='libros'>";
+								echo"<a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='xlibro' src='libros/portada_default.png'/></a>";
+								echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"</div>";
+								echo "<img src='libros/portada_default.png'/>";
 								echo "<div class='extra'><h3>",$row["titulo"],"</h3></div>";
 								echo "<div class='extra'><h4>",$row["autor"],"</h4></div>";
-								echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> </div>";																							
+								echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> </div>";
 								echo "</div>"; //div del reveal
 								$contador++;
 								echo "</div>";//div del content
-							}									
-						?>	
+							}
+						?>
 					</div>
 				</section>
 				<section>
-					<h2>Todos mis Libros</h2>	
+					<h2>Top 5 - Los mas leidos</h2>
 					<div class="contenido">
 						<?php
-							$conexion= new mysqli("127.0.0.1","root","root","alejandria");					
-							$resultado=$conexion->query("select * from alejandria where id_usuario in($id_user,0) order by id desc");		
-							$contador=1;	
-													
-							while($row=$resultado->fetch_array(MYSQLI_ASSOC)){	
-								echo"<div class='content'>";									
+							$conexion= new mysqli("127.0.0.1","root","root","alejandria");
+							$resultado=$conexion->query("select * from alejandria where id_usuario in($id_user,0) order by id desc limit 0,5");
+							$contador=1;
+							while($row=$resultado->fetch_array(MYSQLI_ASSOC)){
+								echo"<div class='content'>";
 								echo"<h3><a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'>",$row["titulo"],"</a></h3>";
 								echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"
-								</div><a class='close-reveal-modal'>&#215;</a></div>";							
+								</div><a class='close-reveal-modal'>&#215;</a></div>";
 								echo "<div class='extra'><h4>",$row["autor"],"</h4></div>";
-								echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> </div>";																							
+								echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> </div>";
 								$contador++;
 								echo "</div>";
-							}									
-						?>	
+							}
+						?>
 					</div>
 				</section>
 			</article>
-		
-						
-			
+
 				<div id="blanco"></div>
 		</div><!-- FIN WRAP -->
 
 
 <?php
 	include("partes/footer.html");
-?>	
+?>
 		</div>	<!-- FIN MAIN -->
-	
+
 	</body>
 </html>
