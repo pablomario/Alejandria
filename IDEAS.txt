@@ -3,6 +3,11 @@ IDEAS
 COMPARTIR DOCUMENTOS
 
 TIPOS DE USUARIOS 
+	- Un usuario de tipo escritor que pueda compartir sus libros
 
 DOCUMENTOS PUBLICOS PRIVADOS
+
+AL compartir un libro quedara bloqueado para el prestador (no podra usarlo ni compartrlo con otro)
+el usuario con libro prestado no puede comaprtirlo a un tercero
+solo se puede compartir un libro 1 vez cada 15 dias.
 

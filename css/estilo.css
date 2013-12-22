@@ -360,6 +360,7 @@ article section h2{
 }
 
 .contenido{	
+	text-align: center;
 	
 	width: 99%;
 	margin: 0 auto;
@@ -371,7 +372,7 @@ article section h2{
 	}
 
 	.xlibro {
-		opacity: 0.5;
+		opacity: 0.7;
 		transition: 1.5s ease;
  		-moz-transition: 1.5s ease; /* Firefox */
  		-webkit-transition: 1.5s ease; /* Chrome - Safari */

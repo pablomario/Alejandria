@@ -32,10 +32,15 @@
 							$contador=1;
 
 							while($row=$resultado->fetch_array(MYSQLI_ASSOC)){
+								if($row["portada"]!=null){
+									$imagen = $row["portada"];
+								}else{
+									$imagen = "libros/portada_default.png";
+								}
 								echo"<div class='libros'>";
-								echo"<a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='xlibro' src='libros/portada_default.png'/></a>";
+								echo"<a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='xlibro' src='",$imagen,"'/></a>";
 								echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"</div>";
-								echo "<img src='libros/portada_default.png'/>";
+								echo "<img src='",$imagen,"'/>";
 								echo "<div class='extra'><h3>",$row["titulo"],"</h3></div>";
 								echo "<div class='extra'><h4>",$row["autor"],"</h4></div>";
 								echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> </div>";
