@@ -25,7 +25,7 @@
 			<article>
 				<section>
 					<h2>Mis Libros</h2>
-					<div class="contenido">
+					<!--<div class="contenido">
 						<?php
 							$conexion= new mysqli("127.0.0.1","root","root","alejandria");
 							$resultado=$conexion->query("select * from alejandria where id_usuario in($id_user,0) order by id desc");
@@ -39,17 +39,57 @@
 								}
 								echo"<div class='libros'>";
 								echo"<a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='xlibro' src='",$imagen,"'/></a>";
-								echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"</div>";
+								echo "<div id='myModal",$contador,"' class='reveal-modal'>";
 								echo "<img src='",$imagen,"'/>";
-								echo "<div class='extra'><h3>",$row["titulo"],"</h3></div>";
-								echo "<div class='extra'><h4>",$row["autor"],"</h4></div>";
-								echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> </div>";
+								echo "<div class='extra'><h3>Titulo: ",$row["titulo"],"</h3></div>";
+								echo "<div class='extra'><h3>Autor: ",$row["autor"],"</h3></div>";
+								echo "<div class='extra'><h3>Categoria: <a href='#'>",$row["categoria"],"</a></h3></div>";
 								echo "</div>"; //div del reveal
 								$contador++;
 								echo "</div>";//div del content
 							}
 						?>
+					</div>-->
+
+						<div class="contenido">
+						<?php
+							$conexion= new mysqli("127.0.0.1","root","root","alejandria");
+							$resultado=$conexion->query("select * from alejandria where id_usuario in($id_user,0) order by id desc");
+							$contador=1;
+
+							while($row=$resultado->fetch_array(MYSQLI_ASSOC)){
+								if($row["portada"]!=null){
+									$imagen = $row["portada"];
+								}else{
+									$imagen = "libros/portada_default.png";
+								}
+								echo"<div class='libros'>";
+								echo"<a href='#' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='xlibro' src='",$imagen,"'/></a>";
+								echo "<div id='myModal",$contador,"' class='reveal-modal'>";
+									echo "<div class='muestroLibro'>";
+										echo "<img src='",$imagen,"'/>";
+										echo "<div class='datos'>";
+											echo"<h3>Titulo: ",$row["titulo"],"</h3>";
+											echo"<h3>Autor: ",$row["autor"],"</h3>";
+											echo "<h3>Categoria: <a href='#'>",$row["categoria"],"</a></h3>";
+												echo"<div class='contDescarga'>";
+											echo"<a href='#'>Descargar</a>";
+										echo"</div>"; //fin div descarga
+										echo"</div>"; //fin div datos
+									
+									echo "</div>"; //fin div muestroLibro
+
+								echo "</div>"; //div del reveal
+								$contador++;
+								echo "</div>";//div del content
+								
+							}
+						?>
 					</div>
+
+
+									
+
 				</section>
 				<section>
 					<h2>Top 5 - Los mas leidos</h2>

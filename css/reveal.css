@@ -15,13 +15,13 @@
 		}
 	
 	.reveal-modal {
-		visibility: hidden;
+		visibility: hidden;	
 		top: 100px; 
 		left: 50%;
 		margin-left: -300px;
 		width: auto;
 		padding: 2px;
-		background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+		background: #eee;
 		position: absolute;
 		z-index: 101;
 		border: 2px solid #ffffff;		
