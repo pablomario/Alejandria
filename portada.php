@@ -25,32 +25,6 @@
 			<article>
 				<section>
 					<h2>Mis Libros</h2>
-					<!--<div class="contenido">
-						<?php
-							$conexion= new mysqli("127.0.0.1","root","root","alejandria");
-							$resultado=$conexion->query("select * from alejandria where id_usuario in($id_user,0) order by id desc");
-							$contador=1;
-
-							while($row=$resultado->fetch_array(MYSQLI_ASSOC)){
-								if($row["portada"]!=null){
-									$imagen = $row["portada"];
-								}else{
-									$imagen = "libros/portada_default.png";
-								}
-								echo"<div class='libros'>";
-								echo"<a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='xlibro' src='",$imagen,"'/></a>";
-								echo "<div id='myModal",$contador,"' class='reveal-modal'>";
-								echo "<img src='",$imagen,"'/>";
-								echo "<div class='extra'><h3>Titulo: ",$row["titulo"],"</h3></div>";
-								echo "<div class='extra'><h3>Autor: ",$row["autor"],"</h3></div>";
-								echo "<div class='extra'><h3>Categoria: <a href='#'>",$row["categoria"],"</a></h3></div>";
-								echo "</div>"; //div del reveal
-								$contador++;
-								echo "</div>";//div del content
-							}
-						?>
-					</div>-->
-
 						<div class="contenido">
 						<?php
 							$conexion= new mysqli("127.0.0.1","root","root","alejandria");
@@ -64,56 +38,36 @@
 									$imagen = "libros/portada_default.png";
 								}
 								echo"<div class='libros'>";
+								echo "<div class='headerLibros'><img src='usuarios/yo.png'/><span>",$_SESSION['username'],"</spn></div>";
+								echo "<div class='contenedorPortadaLibro'>";
 								echo"<a href='#' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='xlibro' src='",$imagen,"'/></a>";
+								echo "</div>";
 								echo "<div id='myModal",$contador,"' class='reveal-modal'>";
 									echo "<div class='muestroLibro'>";
 										echo "<img src='",$imagen,"'/>";
 										echo "<div class='datos'>";
-											echo"<h3>Titulo: ",$row["titulo"],"</h3>";
-											echo"<h3>Autor: ",$row["autor"],"</h3>";
-											echo "<h3>Categoria: <a href='#'>",$row["categoria"],"</a></h3>";
-												echo"<div class='contDescarga'>";
-											echo"<a href='#'>Descargar</a>";
-										echo"</div>"; //fin div descarga
+											echo"<h3> ",$row["titulo"],"</h3>";
+											echo"<h3> ",$row["autor"],"</h3>";
+											echo "<h4> <a href='#'>",$row["categoria"],"</a></h4>";
+											echo "<div class='botonera'>";				
+												echo "<a class='botondos descargar' href='#'><span class='icon nube'>m</span> Descargar</a>";
+												echo "<a class='botondos compartir' href='#'><span class='icon'>È</span></a>";
+												echo "<a class='botondos modificar' href='#'><span class='icon'>></span></a>";
+											echo "</div>";
 										echo"</div>"; //fin div datos
-									
+
 									echo "</div>"; //fin div muestroLibro
 
 								echo "</div>"; //div del reveal
 								$contador++;
 								echo "</div>";//div del content
-								
-							}
-						?>
-					</div>
 
-
-									
-
-				</section>
-				<section>
-					<h2>Top 5 - Los mas leidos</h2>
-					<div class="contenido">
-						<?php
-							$conexion= new mysqli("127.0.0.1","root","root","alejandria");
-							$resultado=$conexion->query("select * from alejandria where id_usuario in($id_user,0) order by id desc limit 0,5");
-							$contador=1;
-							while($row=$resultado->fetch_array(MYSQLI_ASSOC)){
-								echo"<div class='content'>";
-								echo"<h3><a href='#' class='big-link enlace-video' data-reveal-id='myModal",$contador,"' data-animation='fade'>",$row["titulo"],"</a></h3>";
-								echo "<div id='myModal",$contador,"' class='reveal-modal'><div class=contenidoentrada>",$row["contenido"],"
-								</div><a class='close-reveal-modal'>&#215;</a></div>";
-								echo "<div class='extra'><h4>",$row["autor"],"</h4></div>";
-								echo "<div class='extra'><span>CATEGORIA: </span><a href='#'>",$row["categoria"],"</a> </div>";
-								$contador++;
-								echo "</div>";
 							}
 						?>
 					</div>
 				</section>
 			</article>
-
-				<div id="blanco"></div>
+			
 		</div><!-- FIN WRAP -->
 
 

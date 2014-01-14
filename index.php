@@ -50,7 +50,7 @@
 				</ul>
 			</nav>
 			</header>
-			<div id="blanco"></div> <!-- SALTO  O ESPACIO EN BLANCO -->
+			
 		<div id="wrap">
 			<article class="izquierda">
 				<section class="registro oscuro">

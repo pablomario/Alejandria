@@ -8,7 +8,7 @@
 				$password=$row['contrasena'];
 				$email=$row['email'];	
 		}
-				
+
 		if($password==md5($_POST['pass_login'])){
 			session_start();
 			$_SESSION['id']=$id_usuario;
