@@ -16,6 +16,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
+
 * {
 	font-family: 'Open Sans', sans-serif;
 	margin:0;
@@ -53,27 +54,17 @@ a{
 
 
 .boton {
-	margin: 10px auto;
-	background-color:#ededed;	
-	text-indent:0;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	color:#777777;	
-	font-size:16px;
-	font-weight:bold;
-	font-style:normal;
-	line-height:60px;
-	height:40px;
-	width:150px;
+	margin: 10px auto;	
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: lighter;
 	text-decoration:none;
-	text-align:center;
-	text-shadow:1px 1px 0px #ffffff;
+	background-color: #1087a4;
+	border: 1px solid #1087a4;
 }
 .boton:hover {
-	background-color:#dfdfdf;
-}.boton:active {
-	position:relative;
-	top:1px;
+	background-color: #0C667C;
+	border: 1px solid #0C667C;
 }
 
 
@@ -104,17 +95,17 @@ body{
 
 	#usuario{
 		margin-top: 10px;
-		padding:  7px;		
+		padding:  12px;		
 		float:right;
 	}
 
 	#usuario form{	
 		text-align:  center;
 		margin-top: -20px;	
-		background: orange;
-		padding:  7px;
-		-webkit-box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
-		box-shadow: 1px 1px 12px 6px rgba(1, 1, 1, 0.3);
+		/* background: orange; */
+		background-color: #fff;
+		padding:  7px;		
+		box-shadow: 0px 1px 0px 4px rgba(254, 254, 254, 0.4);
 	}
 
 	#usuario form label{	
@@ -153,7 +144,7 @@ body{
 }
 
 #imagen-cabecera{
-	height:  160px;
+	height:  130px;
 	width: 100%;
 	background:  url("../img/background-header.jpg") top center repeat-x;
 }
@@ -186,8 +177,8 @@ nav{
 	}
 
 	#navegacion li a:hover{
-		background-color: orange; 
-		color:#1f1b16;
+		background-color:#13bfe6;
+		color:#fff;
 		box-shadow:  inset 0px -1px 1px #0C0D09;
 	}
 
@@ -321,13 +312,16 @@ section{
 	color: #8c8c8c!important;	
 }
 
-section h2{	
+section h2{
 	border-top: 1px solid #353535;
 	text-align:  left;
-	padding: 4px 4px 4px 20px;
+	padding: 6px 4px 6px 15px;
 	margin-bottom: 10px;
+	font-weight: lighter;
 	background:  #272822;
 	color: #ffffff;
+	font-size: 1.7em;
+	text-shadow: 1px 1px #181A15;
 }
 
 /* ====== SECTION ====== */

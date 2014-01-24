@@ -27,7 +27,7 @@
 			<header>
 			<div id="content-logo">
 				<div id="logo">
-					<a href="index.php"><img src="img/alejandria-logo.png" alt="alejandria-logo" title="Alejandria"/></a>
+					<a href="index.php"><img src="img/logo.png" height="90px" width="auto" alt="alejandria-logo" title="Alejandria"/></a>
 				</div>
 				<div id="usuario">
 					<form id="form_login" method="post" action="procesar.php">
@@ -52,7 +52,7 @@
 			</header>
 			
 		<div id="wrap">
-			<article class="izquierda">
+			<article>
 				<section class="registro oscuro">
 					<h2>Registrate Ahora - Es Gratis</h2>
 					<form id="form_registro" name="form_registro">
@@ -68,9 +68,9 @@
 						<label for="pass2">Repita Contraseña: </label><br/>
 						<input type="password" id="pass2" name="pass2" pattern="\S{6,}" required aria-required="true"><br/>
 
-
-						<input type="button" id="botonGuardar" value="Aceptar" class="boton"
-						onclick="javascript:js_registroUsuario();">
+						<input type="submit" name="entrar" value="Aceptar" onclick="javascript:js_registroUsuario();">
+						
+						
 					</form>
 
 				</section>
@@ -89,33 +89,6 @@
 					</div>
 				</section>
 			</article>
-			<aside class="derecha">
-					<section>
-						<p>
-						<div class="g-person" data-href="//plus.google.com/+PabloMGP" data-rel="author"></div>
-						</p>
-					<script type="text/javascript">
-						(function() {
-						var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-						po.src = 'https://apis.google.com/js/plusone.js';
-						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-						})();
-					</script>
-					</section>
-
-					<section>
-						<h2>Proyecto en GitHub</h2>
-						<p>
-							<a href="https://github.com/pablomario/Alejandria.git">
-								<img src="img/Octocat.png" height="auto" width="250px" alt="Github logo"/>					
-							</a>	
-						</p>
-					</section>
-
-
-
-				</aside>
-			<div id="blanco"></div>
 		</div><!-- FIN WRAP -->
 <?php
 	include("partes/footer.html");
