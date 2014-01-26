@@ -99,21 +99,19 @@ body{
 		float:right;
 	}
 
-	#usuario form{	
-		text-align:  center;
-		margin-top: -20px;	
-		/* background: orange; */
+	#usuario form{		
+		width: 200px;
+		margin-top: -20px;
 		background-color: #fff;
-		padding:  7px;		
+		padding: 10px;
 		box-shadow: 0px 1px 0px 4px rgba(254, 254, 254, 0.4);
 	}
 
-	#usuario form label{	
-		text-align: left!important;
-	}
-
 	#usuario form input{
-		padding:  3px;
+		margin: 5px auto;
+		width: 90%;
+		display: block;
+		padding: 5px;
 	}
 
 	#errorLogin{
@@ -144,12 +142,82 @@ body{
 }
 
 #imagen-cabecera{
-	height:  130px;
+	height: 130px;
 	width: 100%;
-	background:  url("../img/background-header.jpg") top center repeat-x;
+	/* background:  url("../img/background-header.jpg") top center repeat-x; */
+	background:  url("../img/anacostia_library_interior_01.jpg") center center repeat-x;
 }
 
-nav{	
+#banner-gigante{	
+	color: #ffffff;	
+	width: 100%;
+	background: url("../img/dot.png"), url("../img/anacostia_library_interior_01.jpg") center center repeat-x;
+
+}
+
+#banner-gigante .banner-gigante-presentacion{
+	font-size: 1.5em;
+	height: 250px;
+	padding: 40px 50px 0px 50px;	
+	text-shadow: 1px 1px 3px #000000;
+}
+
+#banner-gigante .banner-gigante-presentacion a{
+	position: absolute;
+	color: #ffffff;
+	text-shadow: none;
+	background-color: rgb(16, 135, 164);
+	padding: 10px;
+	margin: 10px 50px 10px 40px;
+	box-shadow: 0px 0px 3px #000;
+}
+
+#banner-gigante .banner-gigante-presentacion a:hover{
+	color: #ffffff;
+	background-color: #13bfe6;
+}
+
+/* ----- REGISTRO -----*/
+#banner-gigante .banner-gigante-registro{
+	height: 500px;
+	width: 100%;
+}
+
+#registro-nuevo{
+	padding-top: 40px;
+}
+#banner-gigante .banner-gigante-registro form{
+	margin: 0 auto;
+	width: 40%;
+	height: auto;
+	color: #2D2E27;
+	background-color: rgba(254, 254, 254, 0.9);
+	padding: 10px;
+	box-shadow: 0px 1px 0px 10px rgba(254, 254, 254, 0.4);
+}
+
+#banner-gigante .banner-gigante-registro form label{
+	padding-left: 2%;
+	width: 90%;
+	display: block;
+	
+}
+
+#banner-gigante .banner-gigante-registro form input{
+	margin: 0 auto;
+	width: 90%;
+	display: block;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+nav{
 	height:  40px;
 	width:  100%;
 	background: #272822;
@@ -324,35 +392,50 @@ section h2{
 	text-shadow: 1px 1px #181A15;
 }
 
+
+section .contenido-portada{
+	width: 60%;
+	padding: 2%;
+}
+
+section .contenido-portada li{
+	margin-left: 40px;
+	list-style: upper-roman;
+}
+
+
 /* ====== SECTION ====== */
 
-article section{
-	width:  100%;
-}
+	article section{
+		width:  100%;
+	}
 
-article section form{
-	padding: 4px;
-}
+	#usuario{
+		margin-top: 10px;
+		padding:  12px;		
+		float:right;
+	}
 
-.oscuro{
-	color:#242424!important;
-}
+	#usuario form{		
+		width: 200px;
+		margin-top: -20px;
+		background-color: #fff;
+		padding: 10px;
+		box-shadow: 0px 1px 0px 4px rgba(254, 254, 254, 0.4);
+	}
 
-.registro{
-	text-align: center;
-}
+	#usuario form input{
+		margin: 5px auto;
+		width: 90%;
+		display: block;
+		padding: 5px;
+	}
 
-article section form input{
-	height:  20px;
-	padding: 2px;
-	margin:  4px;
-}
 
-article section form span{
-	padding-left:  50px;
-	font-size:  12px;
-	font-style:  italic; 
-}
+
+
+
+
 
 
 .contenido{
@@ -433,8 +516,7 @@ article section form span{
 /* MOSTRAR LIBRO REVEAL Y ESTOS */
 
 	.muestroLibro{
-		font-weight: normal;
-		
+		font-weight: normal;		
 		min-width: 550px;
 		width: auto;
 		padding: 10px;

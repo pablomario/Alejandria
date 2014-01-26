@@ -14,6 +14,8 @@
 		<title>Alejandria</title>	
 	  	<link rel="stylesheet" href="css/estilo.css">	  
 		<script type="text/javascript" src="js/funciones.js"></script>
+		<meta property="og:image" content="img/icon.png"/>
+		<link rel="icon" type="image/png" href="/img/icon.png" />
 	</head>
 	<body>
 		<div id="main">
@@ -30,21 +32,32 @@
 					<a href="index.php"><img src="img/logo.png" height="90px" width="auto" alt="alejandria-logo" title="Alejandria"/></a>
 				</div>
 				<div id="usuario">
-					<form id="form_login" method="post" action="procesar.php">
-						<label>Usuario: </label><br/>
-						<input type="text" name="user_login" placeholder="usuario" ><br/>
-
-						<label>Contrase&ntilde;a: </label><br/>
-						<input type="password" name="pass_login" placeholder="password" ><br/>
-
-						<input type="submit" name="entrar" value="Iniciar Sesion" class="boton">					</form>	
+					<form id="form_login" method="post" action="procesar.php">						
+						<input type="text" name="user_login" placeholder="Usuario" >						
+						<input type="password" name="pass_login" placeholder="Contraseña" >
+						<input type="submit" name="entrar" value="Iniciar Sesion" class="">
+					</form>	
 				</div>
 			</div>
-			<div id="imagen-cabecera"></div> <!-- IMAGEN BANNER -->
+			<div id="banner-gigante">
+				<div class="banner-gigante-presentacion">
+					<h2>Alejandria Cloud</h2>
+					<p>
+						<li>Modesta, Sencilla y Simple de Utilizar</li>
+						<li>Gestiona tus documentos, Opina, Valora y Comparte*</li>
+						<li>Todos tus Documentos y Libros siempre a mano</li>
+					</p>
+					<p>
+						<a href="./registro.php">Registrate Ahora!</a>
+					</p>
+				</div>
+			</div> <!-- IMAGEN BANNER -->
 			<nav>
 				<ul id="navegacion">
-					<li><a href="#">¿Alejandria?</a></li>
-					<li><a href="#">Staff</a></li>
+					<li><a href="#">¿ Alejandria ?</a></li>
+					<li><a href="./registro.php">Registrate</a></li>
+					<li><a href="#">Contacto</a></li>
+					<li><a href="#">Develop</a></li>
 					<li><a href="#">Legal</a></li>
 					<li><a href="https://github.com/pablomario/Alejandria.git">GitHub</a></li>
 				</ul>
@@ -53,39 +66,23 @@
 			
 		<div id="wrap">
 			<article>
-				<section class="registro oscuro">
-					<h2>Registrate Ahora - Es Gratis</h2>
-					<form id="form_registro" name="form_registro">
-						<label for="user">Usuario: </label><br/>
-						<input type="text" id="user" name="user" placeholder="pepe" required aria-required="true" ><br/>
-
-						<label for="email">email: </label><br/>
-						<input type="text" id="email" name="email" placeholder="pepe@gmail.com" required aria-required="true"><br/>
-
-						<label for="pass1">Contraseña: </label><br/>
-						<input type="password" id="pass1" name="pass1" pattern="\S{6,}" required aria-required="true"><br/>
-
-						<label for="pass2">Repita Contraseña: </label><br/>
-						<input type="password" id="pass2" name="pass2" pattern="\S{6,}" required aria-required="true"><br/>
-
-						<input type="submit" name="entrar" value="Aceptar" onclick="javascript:js_registroUsuario();">
-						
-						
-					</form>
-
-				</section>
 				<section>
-					<h2>Tu Biblioteca Privada y Personal</h2>
-					<div class="content oscuro">
-						<p>Ya puedes tener tu propia <b>Biblioteca</b> y <b>Emeroteca</b> privada gracias <b>Alejandria</b>. 							
-							<ul>
-								<li><b>Registrate</b> e Inicia Sesion</li>
-								<li>Guarda tus <b>Peliculas</b> y <b>Documentales</b> favoritos de Youtube.</li>
-								<li>Guarda los <b>Libros</b> y <b>Documentos</b> mas interesantes para ti.</li>
-								<li><b>Visualiza Online</b> toda tu biblioteca</li>
-								<li>... y todo <b>Gratis!</b></li>
-							</ul>
-						</p>
+					<h2>Unete a nosotros y forma parte de la Comunidad</h2>
+					<div class="contenido-portada">
+						<h3>Tu bliblioteca privada en la nube</h3>
+						<p>Es un nuevo Servicio Online que te permite tener tu propia biblitoeca privada donde poder tener almacenada de foram gratuita todos tus documentos y libros.<br/>
+						De esta forma podras gestionar todo lo que almacenes en nuestro servicio, agregar nuevos documentos, 
+						valorarlos, dejar tus opiniones y proximamente compartitlos con tus amigos.</p>
+						<h3>Razones, para que al menos pruebs Alejandria</h3>
+						<ol>
+							<li>Es Gratis.</li>
+							<li>No pretendemos revolucionar tu modo de vida.</li>
+							<li>Es muy facil de utilizar.</li>
+							<li>Tu ideas y tu opinión son las que nos hacen mejorar.</li>					
+							<li>"No hacemos el mal"</li>
+							<li>Somos humildes y tú nos importas.</li>
+							<li>Los problemas son tratados de forma personal.</li>
+						</ol>
 					</div>
 				</section>
 			</article>
