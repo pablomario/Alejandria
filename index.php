@@ -21,9 +21,9 @@
 		<div id="main">
 			<?php
 				if($error==1){
-					echo "<div id='errorLogin'><p> Error al Iniciar Sesion, Intentelo de nuevo</p></div>";
+					echo "<div id='errorLogin'><p><span class='icon'>8</span>  Error al Iniciar Sesion, Intentelo de nuevo</p></div>";
 				}else if ($error==2){
-					echo "<div id='errorLogin'><p>Tu usuario o contraseña es incorrecto</p></div>";
+					echo "<div id='errorLogin'><p><span class='icon'>8</span> Tu usuario o contraseña es incorrecto</p></div>";
 				}
 			?>
 			<header>
@@ -56,10 +56,11 @@
 				<ul id="navegacion">
 					<li><a href="#">¿ Alejandria ?</a></li>
 					<li><a href="./registro.php">Registrate</a></li>
-					<li><a href="#">Contacto</a></li>
-					<li><a href="#">Develop</a></li>
+					<li><a href="#">Contacto</a></li>					
 					<li><a href="#">Legal</a></li>
-					<li><a href="https://github.com/pablomario/Alejandria.git">GitHub</a></li>
+					<li><a href="#">Develop</a></li>
+					<li><a href="#">BugTrack <span class='icon'>Ç</span> </a></li>
+					<li><a href="https://github.com/pablomario/Alejandria.git">GitHub <span class='icon'>U</span> </a></li>
 				</ul>
 			</nav>
 			</header>

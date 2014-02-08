@@ -38,7 +38,7 @@
 									$imagen = "libros/portada_default.png";
 								}
 								echo"<div class='libros'>";
-								echo "<div class='headerLibros'><img src='usuarios/yo.png'/><span>",$_SESSION['username'],"</spn></div>";
+								//echo "<div class='headerLibros'><img src='usuarios/yo.png'/><span>",$_SESSION['username'],"</spn></div>";
 								echo "<div class='contenedorPortadaLibro'>";
 								echo"<a href='#' data-reveal-id='myModal",$contador,"' data-animation='fade'><img class='xlibro' src='",$imagen,"'/></a>";
 								echo "</div>";
