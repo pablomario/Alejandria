@@ -28,6 +28,7 @@ ul, li {
 	list-style:  none;
 }
 
+
 #blanco{
 	height: 15px; 
 	clear: inherit;
@@ -40,6 +41,12 @@ ul, li {
 .derecha{	
 	margin-left: 10px;
 	float: right;
+}
+
+.centro{
+	text-align: center;
+	margin: 0 auto;
+
 }
 
 a{
@@ -445,17 +452,13 @@ section .contenido-portada li{
 	margin: 0 auto;
 }
 
-	.libros{		
+	.libros{
 		padding: 5px;
 		display: inline-block;
 		min-height: 200px;
-		margin: 4px;		
-		border: 1px solid rgba(34,34,34,0.2);
+		margin: 4px;
 	}
 
-
-	
-	
 
 	.xlibro {
 		opacity: 0.7;

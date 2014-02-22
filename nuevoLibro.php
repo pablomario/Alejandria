@@ -15,7 +15,7 @@ almacenar($id_user,$titulo,$autor,$contenido,$categoria,$target_path,$ruta_foto)
 
 function almacenar($id_user,$titulo,$autor,$contenido,$categoria,$target_path,$ruta_foto){
 	global $ruta_foto, $target_path;
-	if($_FILES['imagen']['type']=="image/jpeg"){
+	if($_FILES['imagen']['type']=="image/jpeg" || $_FILES['imagen']['type']=="image/png"){
 		$imagenOriginal=$_FILES['imagen'];
 		if(!empty($titulo) && !empty($contenido)) {
 			guardar($target_path);

@@ -25,7 +25,7 @@
 			<article>
 				<section>
 					<h2>Mis Libros</h2>
-						<div class="contenido">
+						<div class="centro contenido">
 						<?php
 							$conexion= new mysqli("127.0.0.1","root","root","alejandria");
 							$resultado=$conexion->query("select * from alejandria where id_usuario in($id_user,0) order by id desc");
@@ -52,7 +52,7 @@
 											echo "<div class='botonera'>";				
 												echo "<a class='botondos descargar' href='#'><span class='icon nube'>m</span> Descargar</a>";
 												echo "<a class='botondos compartir' href='#'><span class='icon'>È</span></a>";
-												echo "<a class='botondos modificar' href='#'><span class='icon'>></span></a>";
+												echo "<a class='botondos modificar' href='gestionlibros.php?libro=",$row["id"],"'><span class='icon'>></span></a>";
 											echo "</div>";
 										echo"</div>"; //fin div datos
 

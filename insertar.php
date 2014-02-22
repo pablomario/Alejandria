@@ -20,8 +20,7 @@
 		<div id="main">
 <?php include("partes/cabecera.html"); ?>
 
-			<div id="wrap">
-			<article class="izquierda">
+			<div id="wrap">			
 				<section>
 					<h2>Agregar Nuevo Documento</h2>
 					<div class="contenido">
@@ -45,10 +44,10 @@
 							
 							<input type="submit" name="Aceptar" value="Aceptar" class="boton awesome">
 						</form>
-					</div>
+				
 				</section>
 			</article>
-				<div id="blanco"></div>
+				
 		</div><!-- FIN WRAP -->
 
 
