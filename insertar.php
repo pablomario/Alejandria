@@ -41,19 +41,15 @@
 
 							<label for="categoria">Categoria: </label><br/>
 							<input type="text" id="categoria" name="categoria"><br/>
-							
+
 							<input type="submit" name="Aceptar" value="Aceptar" class="boton awesome">
 						</form>
-				
 				</section>
 			</article>
-				
 		</div><!-- FIN WRAP -->
 
 
-<?php
-	include("partes/footer.html");
-?>	
+<?php include("partes/footer.html"); ?>
 		</div>	<!-- FIN MAIN -->
 
 	</body>
