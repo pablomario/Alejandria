@@ -32,8 +32,8 @@
 					<a href="index.php"><img src="img/logo.png" height="90px" width="auto" alt="alejandria-logo" title="Alejandria"/></a>
 				</div>
 				<div id="usuario">
-					<form id="form_login" method="post" action="procesar.php">						
-						<input type="text" name="user_login" placeholder="Usuario" >						
+					<form id="form_login" method="post" action="procesar.php">
+						<input type="text" name="user_login" placeholder="Usuario" >
 						<input type="password" name="pass_login" placeholder="Contraseña" >
 						<input type="submit" name="entrar" value="Iniciar Sesion" class="">
 					</form>	
@@ -56,7 +56,7 @@
 				<ul id="navegacion">
 					<li><a href="#">¿ Alejandria ?</a></li>
 					<li><a href="./registro.php">Registrate</a></li>
-					<li><a href="#">Contacto</a></li>					
+					<li><a href="#">Contacto</a></li>
 					<li><a href="#">Legal</a></li>
 					<li><a href="#">Develop</a></li>
 					<li><a href="#">BugTrack <span class='icon'>Ç</span> </a></li>
@@ -64,7 +64,7 @@
 				</ul>
 			</nav>
 			</header>
-			
+
 		<div id="wrap">
 			<article>
 				<section>
@@ -79,7 +79,7 @@
 							<li>Es Gratis.</li>
 							<li>No pretendemos revolucionar tu modo de vida.</li>
 							<li>Es muy facil de utilizar.</li>
-							<li>Tu ideas y tu opinión son las que nos hacen mejorar.</li>					
+							<li>Tu ideas y tu opinión son las que nos hacen mejorar.</li>
 							<li>"No hacemos el mal"</li>
 							<li>Somos humildes y tú nos importas.</li>
 							<li>Los problemas son tratados de forma personal.</li>

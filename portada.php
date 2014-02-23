@@ -9,12 +9,12 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-		<title>Alejandria</title>	
+		<title>Alejandria - Portada</title>	
 	  	<link rel="stylesheet" href="css/estilo.css">
 
 	  	<link rel="stylesheet" href="css/reveal.css">
 	  	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
-		<script type="text/javascript" src="jquery/jquery.reveal.js"></script>
+		<script type="text/javascript" src="jquery/jquery.reveal.js"></script>	
 		<script type="text/javascript" src="js/funciones.js"></script>
 	</head>
 	<body>
