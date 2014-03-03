@@ -70,7 +70,7 @@
 
 					<input type="submit" name="Aceptar" value="Guardar Cambios" class="boton awesome" ></INPUT>
 				</form>
-				<a href="borrarlibro.php?libro=<?php echo $libro;?>"><span class='icon'>Ë</span> Borrar Libro</a>
+				<a href="borrarlibro.php?libro=<?php echo $libro;?>&imagen=<?php echo $imagen;?>"><span class='icon'>Ë</span> Borrar Libro</a>
 				</div>
 			</div>
 		</section>

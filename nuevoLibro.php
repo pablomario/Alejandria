@@ -22,14 +22,14 @@ function almacenar($id_user,$titulo,$autor,$contenido,$categoria,$target_path,$r
 			$conexion= new mysqli("127.0.0.1","root","root","alejandria");
 			$conexion->query("insert into alejandria(titulo,portada,autor,contenido,categoria,id_usuario) values('$titulo','$ruta_foto','$autor','$contenido','$categoria','$id_user')");
 			echo "<html><head><style type='text/css'>#centrado{padding: 20px;width: 300px;height: auto;text-align: center;margin: 5% auto;box-shadow: 0px 0px 10px #242424;}</style></head><body><div id='centrado'><img src='img/gif-load.gif'/><h1>Almacenando Libro</h1></div></body></html>";
-			header("Refresh: 5; URL=insertar.php");
+			header("Refresh: 2; URL=insertar.php");
 		}else {
 			echo "<html><head><style type='text/css'>#centrado{padding: 20px;width: 300px;height: auto;text-align: center;margin: 5% auto;box-shadow: 0px 0px 10px #242424;}</style></head><body><div id='centrado'><img src='img/alert.jpg' /><h1>Error, algun campo esta vacio</h1></div></body></html>";
-			header("Refresh: 5; URL=insertar.php");
+			header("Refresh: 2; URL=insertar.php");
 		}
 	}else {
 		echo "<html><head><style type='text/css'>#centrado{padding: 20px;width: 300px;height: auto;text-align: center;margin: 5% auto;box-shadow: 0px 0px 10px #242424;}</style></head><body><div id='centrado'><img src='img/alert.jpg' /><h1>Error, algun campo esta vacio</h1></div></body></html>";
-		header("Refresh: 5; URL=insertar.php");
+		header("Refresh: 2; URL=insertar.php");
 	}
 }
 
