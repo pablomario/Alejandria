@@ -4,7 +4,7 @@
 	$libro=$_GET['libro'];
 	$imagen=$_GET['imagen'];
 
-
+echo "<img src=$imagen />";
 borrarlibro($libro,$id_user,$imagen);
 function borrarlibro($libro, $id_user, $imagen){
 		if(!empty($libro)) {
